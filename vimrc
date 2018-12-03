@@ -5,4 +5,4 @@ set autoindent
 set shiftwidth=4
 set cursorline
 hi CursorLine term=bold cterm=bold
-
+syntax on
