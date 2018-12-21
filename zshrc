@@ -11,10 +11,13 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 alias dmesg="sudo dmesg -T"
+alias df='df -h'
 
 # https://github.com/NoxInmortus/ultimate-bashrc
 # get my public ip
 alias myip='curl ipinfo.io/ip'
+
+alias svi='sudo vi'
 
 # pass generation
 alias newpass="openssl rand -base64 20"
