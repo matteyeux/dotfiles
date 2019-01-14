@@ -22,6 +22,8 @@ alias svi='sudo vi'
 # pass generation
 alias newpass="openssl rand -base64 20"
 
+alias netstat="netstat -lntp"
+
 # Extract everything
 extract () {
 	if [ -f $1 ] ; then
