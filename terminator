@@ -1,0 +1,21 @@
+[global_config]
+  enabled_plugins = APTURLHandler, LaunchpadCodeURLHandler, LaunchpadBugURLHandler
+  suppress_multiple_term_dialog = True
+  title_transmit_bg_color = "#5c3566"
+[keybindings]
+  new_tab = <Primary>t
+  new_terminator = <Primary>n
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#2e3436"
+    cursor_color = "#aaaaaa"
+    scrollback_lines = 1000
