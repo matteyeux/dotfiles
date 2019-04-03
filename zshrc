@@ -10,6 +10,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# core dumps
+ulimit -c unlimited
+
 alias dmesg="sudo dmesg -T"
 alias df='df -h'
 
