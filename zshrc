@@ -16,6 +16,7 @@ ulimit -c unlimited
 alias dmesg="sudo dmesg -T"
 alias df='df -h'
 alias ipa='ip --brief --color a'
+alias df='df -h'
 
 # https://github.com/NoxInmortus/ultimate-bashrc
 # get my public ip
