@@ -1,6 +1,6 @@
 export ZSH="/home/mathieu/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="matteyeux"
 
 plugins=(
   git
@@ -28,6 +28,8 @@ alias svi='sudo vi'
 alias newpass="openssl rand -base64 20"
 
 alias netstat="netstat -lntp"
+
+alias ts="tmux new-session -s default_$(whoami)"
 
 # Extract everything
 extract () {

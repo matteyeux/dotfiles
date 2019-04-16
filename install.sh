@@ -15,3 +15,5 @@ cp matteyeux.zsh-theme ~/.oh-my-zsh/themes/matteyeux.zsh-theme
 cp terminator ~/.config/terminator/config
 cp vimrc ~/.vimrc
 cp nanorc ~/.nanorc
+cp tmux.conf ~/.tmux.conf
+
