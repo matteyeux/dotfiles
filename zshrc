@@ -25,7 +25,7 @@ alias myip='curl ipinfo.io/ip'
 alias svi='sudo vi'
 
 # pass generation
-alias newpass="openssl rand -base64 20"
+alias newpass="openssl rand -base64 20 | cut -d '=' -f 1"
 
 alias netstat="netstat -lntp"
 
