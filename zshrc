@@ -17,18 +17,14 @@ alias dmesg="sudo dmesg -T"
 alias df='df -h'
 alias ipa='ip --brief --color a'
 alias df='df -h'
-
-# https://github.com/NoxInmortus/ultimate-bashrc
-# get my public ip
+alias tailf = 'tail -f'
+alias :q='exit'
 alias myip='curl ipinfo.io/ip'
-
 alias svi='sudo vi'
 
 # pass generation
 alias newpass="openssl rand -base64 20 | cut -d '=' -f 1"
-
 alias netstat="netstat -lntp"
-
 alias ts="tmux new-session -s default_$(whoami)"
 
 ### autocompletion
@@ -72,3 +68,14 @@ ssh_tmux() {
 	ssh -t "$1" tmux a || ssh -t "$1" tmux
 }
 
+# docker
+alias dstop-all='docker stop $(docker ps -a -q)'
+alias drm-all='docker rm $(docker ps -a -q)'
+dockerip() {
+        docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}} {{end}}' $1
+}
+
+# Open a bash terminal in the container passed through argument 1 (id or name)
+dbash() {
+  docker exec -it $1 bash
+}
