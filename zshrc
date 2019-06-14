@@ -79,3 +79,7 @@ dockerip() {
 dbash() {
   docker exec -it $1 bash
 }
+
+drun() {
+  docker exec -it $1 $2
+}
