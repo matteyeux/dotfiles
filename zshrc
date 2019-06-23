@@ -22,6 +22,7 @@ alias :q='exit'
 alias myip='curl ipinfo.io/ip'
 alias svi='sudo vi'
 alias keygen='ssh-keygen -t rsa -b 4096 -C "$(hostname)"'
+alias sl='ls --color=tty'
 
 # pass generation
 alias newpass="openssl rand -base64 20 | cut -d '=' -f 1"
