@@ -23,6 +23,9 @@ alias myip='curl ipinfo.io/ip'
 alias svi='sudo vi'
 alias keygen='ssh-keygen -t rsa -b 4096 -C "$(hostname)"'
 alias sl='ls --color=tty'
+alias ida='wine64-development ~/.wine/drive_c/Program\ Files/IDA\ 7.2/ida.exe'
+alias ida64='wine64-development ~/.wine/drive_c/Program\ Files/IDA\ 7.2/ida64.exe'
+
 
 # pass generation
 alias newpass="openssl rand -base64 20 | cut -d '=' -f 1"
