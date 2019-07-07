@@ -25,7 +25,7 @@ alias keygen='ssh-keygen -t rsa -b 4096 -C "$(hostname)"'
 alias sl='ls --color=tty'
 alias ida='wine64-development ~/.wine/drive_c/Program\ Files/IDA\ 7.0/ida.exe'
 alias ida64='wine64-development ~/.wine/drive_c/Program\ Files/IDA\ 7.0/ida64.exe'
-
+alias pipenv='virtualenv -p python3 env'
 
 # pass generation
 alias newpass="openssl rand -base64 20 | cut -d '=' -f 1"
