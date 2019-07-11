@@ -10,6 +10,11 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# fix perl crap
+export LANGUAGE=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # core dumps
 ulimit -c unlimited
 
