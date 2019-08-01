@@ -13,5 +13,7 @@ For dev installation : `cat default.list | xargs apt install -y`
 - `(PREFIX + d)` : detach session
 - `tmux kill-session -t session_name` : destroy session
 
+To copy out of tmux : use `shift` key
+
 My prefix for .tmux.conf is : `CTRL+W`.
 
