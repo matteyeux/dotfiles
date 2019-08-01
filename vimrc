@@ -1,4 +1,4 @@
-# :%s/hello/bye/g < replace string
+" :%s/hello/bye/g < replace string
 set showmatch
 set nu
 set tabstop=4
