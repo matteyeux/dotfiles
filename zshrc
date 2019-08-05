@@ -58,13 +58,13 @@ extract () {
 	if [ -f $1 ] ; then
 		case $1 in
 			*.tar.bz2)	tar xjf $1	;;
-			*.tar.gz)	tar xzf $1	;;
+			*.tar.gz)	tar zxvf $1	;;
 			*.bz2)		bunzip2 $1	;;
 			*.rar)		rar x $1	;;
 			*.gz)		gunzip $1	;;
 			*.tar)		tar xf $1	;;
 			*.tbz2)		tar xjf $1	;;
-			*.tgz)		tar xzf $1	;;
+			*.tgz)		tar zxvf $1	;;
 			*.zip)		unzip $1	;;
 			*.Z)		uncompress $1 ;;
 			*)			echo "'$1' cannot be extracted via extract()" ;;
@@ -93,3 +93,24 @@ dbash() {
 drun() {
   docker exec -it $1 $2
 }
+
+sshportal() {
+  ssh ${1}@sshportal $2
+}
+
+_remotepy() {
+  local cachedir="${XDG_CACHE_HOME:-$HOME/.cache}/remotepy"
+  local hostnames="${cachedir}"/remotepy.txt
+  mkdir -p "${cachedir}"
+  if ! test "$(find "${hostnames}" -mmin -15 2>/dev/null)"; then
+    echo "select device from devices;" | sqlite3 ~/.remotepy.db > "${hostnames}".new
+    if test -s "${hostnames}".new; then
+      mv "${hostnames}"{.new,}
+    else
+      touch "${hostnames}"
+    fi
+  fi
+  compadd $(cat "${hostnames}")
+}
+compdef _remotepy remotepy
+
