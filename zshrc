@@ -57,7 +57,7 @@ autoload -Uz compinit && compinit -i
 extract () {
 	if [ -f $1 ] ; then
 		case $1 in
-			*.tar.bz2)	tar xjf $1	;;
+			*.tar.bz2)	tar jxvf $1	;;
 			*.tar.gz)	tar zxvf $1	;;
 			*.bz2)		bunzip2 $1	;;
 			*.rar)		rar x $1	;;
