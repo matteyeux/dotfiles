@@ -11,6 +11,7 @@ set nowritebackup
 set encoding=utf-8
 set incsearch		" Shows the match while typing
 set ignorecase		" Search case insensitive...
+set background=dark " vim bg will change when running in tmux
 
 hi CursorLine term=bold cterm=bold
 syntax on
