@@ -9,6 +9,7 @@ cp vimrc ~/.vimrc
 cp nanorc ~/.nanorc
 cp tmux.conf ~/.tmux.conf
 cp muttrc ~/.muttrc
+cp taskrc ~/.taskrc
 
 mkdir -p ~/.config/terminator
 cp terminator ~/.config/terminator/config
