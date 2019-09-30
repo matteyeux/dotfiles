@@ -1,4 +1,19 @@
-set folder = "imaps://email@address@imap.gmail.com:993"
-set smtp_url =""
-set spoolfile = "+INBOX"
+# sed -i 's/real_name/your name/g' muttrc
+# sed -i 's/email_addr/your email/g' muttrc
 
+set realname = "real_name"
+set from = "email_addr"
+set use_from = yes
+set envelope_from = yes
+
+set smtp_url = "smtps://email_addr@smtp.gmail.com:465/"
+set imap_user = "email_addr"
+set folder = "imaps://email_addr@imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set ssl_force_tls = yes
+
+# G to get mail
+bind index G imap-fetch-mail
+set editor = "vim"
+set charset = "utf-8"
+set record = ''
