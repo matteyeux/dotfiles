@@ -1,0 +1,4 @@
+set folder = "imaps://email@address@imap.gmail.com:993"
+set smtp_url =""
+set spoolfile = "+INBOX"
+
