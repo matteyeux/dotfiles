@@ -80,6 +80,8 @@ ssh_tmux() {
 # docker
 alias dstop-all='docker stop $(docker ps -a -q)'
 alias drm-all='docker rm $(docker ps -a -q)'
+alias dls='docker image ls'
+
 dockerip() {
         docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}} {{end}}' $1
 }
