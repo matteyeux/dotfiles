@@ -13,6 +13,14 @@ set incsearch		" Shows the match while typing
 set ignorecase		" Search case insensitive...
 set background=dark " vim bg will change when running in tmux
 
+" if python file set this
+au Filetype python set
+    \ tabstop=4
+    \ softtabstop=4
+    \ shiftwidth=4
+    \ expandtab
+    \ autoindent
+
 hi CursorLine term=bold cterm=bold
 syntax on
 set hlsearch
