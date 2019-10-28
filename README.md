@@ -15,5 +15,13 @@ For dev installation : `cat default.list | xargs apt install -y`
 
 To copy out of tmux : use `shift` key
 
-My prefix for .tmux.conf is : `CTRL+W`.
+### tmux copy mode
+
+*This only works with my tmux.conf*
+
+- `CTRL-w + m`
+- navigate to beginning of text
+- hit `space` then 
+- once done : `enter`
+- `CTRL-w + p`
 
