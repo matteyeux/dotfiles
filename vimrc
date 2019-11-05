@@ -14,7 +14,7 @@ set ignorecase		" Search case insensitive...
 set background=dark " vim bg will change when running in tmux
 
 " if python file set this
-au Filetype python set
+au Filetype python,yaml set
     \ tabstop=4
     \ softtabstop=4
     \ shiftwidth=4
@@ -22,12 +22,12 @@ au Filetype python set
     \ autoindent
 
 " if yaml file set this
-au Filetype yaml set
-    \ tabstop=4
-    \ softtabstop=4
-    \ shiftwidth=4
-    \ expandtab
-    \ autoindent
+"au Filetype yaml set
+"    \ tabstop=4
+"    \ softtabstop=4
+"    \ shiftwidth=4
+"    \ expandtab
+"    \ autoindent
 hi CursorLine term=bold cterm=bold
 syntax on
 set hlsearch
