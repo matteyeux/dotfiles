@@ -21,6 +21,13 @@ au Filetype python set
     \ expandtab
     \ autoindent
 
+" if yaml file set this
+au Filetype yaml set
+    \ tabstop=4
+    \ softtabstop=4
+    \ shiftwidth=4
+    \ expandtab
+    \ autoindent
 hi CursorLine term=bold cterm=bold
 syntax on
 set hlsearch
