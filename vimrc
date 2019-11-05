@@ -35,8 +35,21 @@ endfunction
 command Marker call InsertMarker()
 map mm :Marker<enter>
 
-" jump to the last position when reopening a file
+" Uncomment the following to have Vim jump to the last position
+" when reopening a file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
 endif
+
+" Turning off auto indent when pasting text into vim
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
