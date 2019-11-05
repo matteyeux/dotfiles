@@ -21,13 +21,6 @@ au Filetype python,yaml set
     \ expandtab
     \ autoindent
 
-" if yaml file set this
-"au Filetype yaml set
-"    \ tabstop=4
-"    \ softtabstop=4
-"    \ shiftwidth=4
-"    \ expandtab
-"    \ autoindent
 hi CursorLine term=bold cterm=bold
 syntax on
 set hlsearch
@@ -41,3 +34,9 @@ endfunction
 
 command Marker call InsertMarker()
 map mm :Marker<enter>
+
+" jump to the last position when reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+    \| exe "normal! g'\"" | endif
+endif
