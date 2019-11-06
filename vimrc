@@ -35,8 +35,7 @@ endfunction
 command Marker call InsertMarker()
 map mm :Marker<enter>
 
-" Uncomment the following to have Vim jump to the last position
-" when reopening a file
+" jump to the last position when reopening a file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
     \| exe "normal! g'\"" | endif
