@@ -25,3 +25,14 @@ To copy out of tmux : use `shift` key
 - once done : `enter`
 - `CTRL-w + p`
 
+### Encrypt/Decrypt file with GPG
+
+1) Create GPG key : `gpg --full-gen-key`
+2) Create file : `echo secret > secret`
+3) Encrypt file : `gpg -r mail -e secret`
+4) Decrypt : `gpg -d secret.gpg`
+
+
+### Generate SSH key
+- `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+
