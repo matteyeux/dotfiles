@@ -39,6 +39,7 @@ alias newpass="openssl rand -base64 20 | cut -d '=' -f 1"
 alias netstat="netstat -lntp"
 alias ts="tmux new-session -s default_$(whoami)"
 alias code="codium"
+alias diff="diff --color"
 
 ### autocompletion
 # Highlight the current autocomplete option
