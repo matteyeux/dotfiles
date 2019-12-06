@@ -14,6 +14,7 @@ cp gdbinit ~/.gdbinit
 
 mkdir -p ~/.config/terminator
 cp terminator ~/.config/terminator/config
+cp -r sublime-text-3 ~/.config/
 
 # install oh-my-zsh
 # sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
