@@ -36,3 +36,6 @@ To copy out of tmux : use `shift` key
 ### Generate SSH key
 - `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
+### Screenshot
+- install `gnome-screenshot`
+- set save directory to ~/Pictures : `gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/$USER/Pictures/"`
