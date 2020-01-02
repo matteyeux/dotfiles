@@ -17,6 +17,12 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export THEOS=~/theos
+export PATH=$PATH:~/.local/bin
+
+# workaround for the PYTHONPATH error
+python3_real_vers=$(python3 --version | cut -f 2 -d' ')
+python3_vers=${python3_real_vers:0:3}
+export PYTHONPATH="/home/mathieu/.local/lib/python$python3_vers/site-packages/"
 
 # core dumps
 ulimit -c unlimited
