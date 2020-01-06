@@ -17,3 +17,7 @@ bind index G imap-fetch-mail
 set editor = "vim"
 set charset = "utf-8"
 set record = ''
+
+# reverse order, so the latest mail is a the top
+set sort = reverse-date-received
+
