@@ -46,6 +46,7 @@ alias netstat="netstat -lntp"
 alias ts="tmux new-session -s default_$(whoami)"
 alias code="codium"
 alias diff="diff --color"
+alias run_jekyll='bundle exec jekyll server --host=0.0.0.0'
 
 ### autocompletion
 # Highlight the current autocomplete option
