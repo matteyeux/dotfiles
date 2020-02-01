@@ -48,6 +48,10 @@ alias code="codium"
 alias diff="diff --color"
 alias run_jekyll='bundle exec jekyll server --host=0.0.0.0'
 
+if [[ !$(which python) ]]; then
+        alias python="python3"
+fi
+
 ### autocompletion
 # Highlight the current autocomplete option
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
