@@ -44,7 +44,6 @@ alias ida64='wine64-development ~/.wine/drive_c/Program\ Files/IDA\ 7.0/ida64.ex
 alias pipenv='virtualenv -p python3 env'
 alias freeze='pip3 freeze | grep -v "pkg-resources" > requirements.txt'
 alias newpass="openssl rand -base64 20 | cut -d '=' -f 1"
-alias netstat="netstat -lntp"
 alias ts="tmux new-session -s default_$(whoami)"
 alias code="codium"
 alias diff="diff --color"
