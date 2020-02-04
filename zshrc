@@ -1,6 +1,8 @@
 export ZSH="/home/mathieu/.oh-my-zsh"
 
-ZSH_THEME="matteyeux"
+# This is the default theme.
+# This repo comes with a custom one I made : matteyeux
+ZSH_THEME="robbyrussell"
 
 plugins=(
   git
