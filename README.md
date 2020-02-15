@@ -39,3 +39,6 @@ To copy out of tmux : use `shift` key
 ### Screenshot
 - install `gnome-screenshot`
 - set save directory to ~/Pictures : `gsettings set org.gnome.gnome-screenshot auto-save-directory "file:///home/$USER/Pictures/"`
+
+### Python tips and tricks
+- man like for modules and classes : `python3 -m pydoc docker.utils.build`
