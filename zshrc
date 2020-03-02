@@ -48,6 +48,7 @@ alias ts="tmux new-session -s default_$(whoami)"
 alias code="codium"
 alias diff="diff --color"
 alias run_jekyll='bundle exec jekyll server --host=0.0.0.0'
+alias k=kubectl
 
 if [[ !$(which python) ]]; then
         alias python="python3"
@@ -132,3 +133,6 @@ _remotepy() {
 }
 compdef _remotepy remotepy
 
+# kubernetes autocompletion
+source <(kubectl completion zsh)
+complete -F __start_kubectl k
