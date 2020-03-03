@@ -26,6 +26,10 @@ python3_real_vers=$(python3 --version | cut -f 2 -d' ')
 python3_vers=${python3_real_vers:0:3}
 export PYTHONPATH="/home/mathieu/.local/lib/python$python3_vers/site-packages/"
 
+# used by kubectl for multiple
+# kube contexts (eg minukube and k8s cluster)
+export KUBECONFIG=$HOME/.kube/config:$HOME/.kube/minikube
+
 # core dumps
 ulimit -c unlimited
 
