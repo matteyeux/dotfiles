@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 # script to fix .zsh_history when it breaks
 # https://superuser.com/a/957924
 mv ~/.zsh_history .zsh_history_bad
