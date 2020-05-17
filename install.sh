@@ -11,6 +11,7 @@ cp tmux.conf ~/.tmux.conf
 cp muttrc ~/.muttrc
 cp taskrc ~/.taskrc
 cp gdbinit ~/.gdbinit
+cp gitconfig ~/.gitconfig
 
 # add terminator configuration
 mkdir -p ~/.config/terminator
