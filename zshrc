@@ -46,6 +46,7 @@ alias sl='ls --color=tty'
 alias ida='wine64-development ~/.wine/drive_c/Program\ Files/IDA\ 7.0/ida.exe'
 alias ida64='wine64-development ~/.wine/drive_c/Program\ Files/IDA\ 7.0/ida64.exe'
 alias pipenv='virtualenv -p python3 env'
+alias venv='source env/bin/activate'
 alias freeze='pip3 freeze | grep -v "pkg-resources" > requirements.txt'
 alias newpass="openssl rand -base64 20 | cut -d '=' -f 1"
 alias ts="tmux new-session -s default_$(whoami)"
@@ -137,6 +138,3 @@ _remotepy() {
 }
 compdef _remotepy remotepy
 
-# kubernetes autocompletion
-source <(kubectl completion zsh)
-complete -F __start_kubectl k
