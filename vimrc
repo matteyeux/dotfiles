@@ -1,4 +1,8 @@
-" :%s/hello/bye/g < replace string
+" this adds dracula theme
+let g:dracula_italic = 0
+packadd! dracula
+colorscheme dracula
+
 set showmatch
 set nu
 set tabstop=4
