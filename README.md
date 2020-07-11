@@ -42,3 +42,8 @@ To copy out of tmux : use `shift` key
 
 ### Python tips and tricks
 - man like for modules and classes : `python3 -m pydoc docker.utils.build`
+
+
+### Git resources
+- [First Aid Git](http://firstaidgit.io)
+
