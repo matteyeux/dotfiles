@@ -1,4 +1,4 @@
-export ZSH="/home/mathieu/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # This is the default theme.
 # This repo comes with a custom one I made : matteyeux
