@@ -16,6 +16,9 @@ set incsearch		" Shows the match while typing
 set ignorecase		" Search case insensitive...
 set background=dark " vim bg will change when running in tmux
 
+set list
+set listchars=tab:>.,trail:.
+
 
 " if python or yaml file set this
 au Filetype python,yaml set
