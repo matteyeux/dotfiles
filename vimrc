@@ -2,6 +2,11 @@
 let g:dracula_italic = 0
 packadd! dracula
 colorscheme dracula
+highlight Normal ctermbg=None
+
+if (has("termguicolors"))
+	set termguicolors
+endif
 
 set showmatch
 set nu
