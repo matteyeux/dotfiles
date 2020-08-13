@@ -54,7 +54,7 @@ alias code="codium"
 alias diff="diff --color"
 alias run_jekyll='bundle exec jekyll server --host=0.0.0.0'
 alias k=kubectl
-alias gfun='git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Cblue - %cn %Creset'\'' --abbrev-commit --date=relative''
+alias gfun="git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Cblue - %cn %Creset'\'' --abbrev-commit --date=relative'"
 
 if [[ !$(which python) ]]; then
         alias python="python3"
