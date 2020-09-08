@@ -49,7 +49,7 @@ To copy out of tmux : use `shift` key
 
 #### PR test
 - git clone 
-- git remote add andrewlanex git@github.com:andrewlanex/babi
-- git fetch andrewlanex
+- `git remote add andrewlanex git@github.com:andrewlanex/babi`
+- `git fetch andrewlanex`
 - checkout to expendtab
 
