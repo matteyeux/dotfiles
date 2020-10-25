@@ -57,7 +57,7 @@ alias k=kubectl
 alias gfun="git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Cblue - %cn %Creset'\'' --abbrev-commit --date=relative'"
 alias binja="~/Documents/binaryninja/binaryninja"
 alias python="python3"
-
+alias wtf='yes "$(seq 231 -1 16)" | while read i; do printf "\x1b[48;5;${i}m\n"; sleep .02; done'
 if [[ !$(which python) ]]; then
         alias python="python3"
 fi
@@ -123,6 +123,10 @@ drun() {
 
 sshportal() {
   ssh ${1}@sshportal $2
+}
+
+export_iboot_symbols() {
+	iBoot64Finder -f $1 |  grep locate | sed  's/\[locate_func]: /dict_f[\"/g' | sed 's/ =/"] =/g'
 }
 
 _remotepy() {
