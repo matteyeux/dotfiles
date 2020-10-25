@@ -53,3 +53,5 @@ To copy out of tmux : use `shift` key
 - `git fetch andrewlanex`
 - checkout to expendtab
 
+### Terminal background color
+`#404552`
