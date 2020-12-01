@@ -129,6 +129,13 @@ export_iboot_symbols() {
 	iBoot64Finder -f $1 |  grep locate | sed  's/\[locate_func]: /dict_f[\"/g' | sed 's/ =/"] =/g'
 }
 
+bindiff () {
+	xxd $1 > ${1}.xxd
+	xxd $2 > ${2}.xxd
+	
+	vimdiff ${1}.xxd ${2}.xxd
+}
+
 _remotepy() {
   local cachedir="${XDG_CACHE_HOME:-$HOME/.cache}/remotepy"
   local hostnames="${cachedir}"/remotepy.txt
