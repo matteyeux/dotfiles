@@ -5,6 +5,18 @@
 For default installation : `cat default.list | xargs apt install -y`
 For dev installation : `cat default.list | xargs apt install -y`
 
+### VIM cheat sheet
+Normal mode :
+- delete paragraph : `dip` (delete inside paragraph)
+- uppercase word : `gUiw` (go uppercase inside word)
+- delete current word and go into insertion mode : `ci`
+- open filename on the word `gf`
+- delete string between double quotes`ci"` (change inside double-quotes)
+
+Commands :
+- sort lines 1 to 5 in alphabetical order `:1,5sort`
+- delete lines 15 to 17 : `15,17d`
+
 ### tmux cheat sheet
 - `tmux new -s session_name` : new named session
 - `tmux attach -t session_name` : attach an exsiting session
