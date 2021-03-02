@@ -18,6 +18,7 @@ Commands :
 - delete lines 15 to 17 : `15,17d`
 - open file : `:e filename.c`
 - save to new file : `:w filename.py`
+- commands history : `q:`
 
 ### tmux cheat sheet
 - `tmux new -s session_name` : new named session
