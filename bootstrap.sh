@@ -34,6 +34,10 @@ cp -r sublime-text-3/* ~/.config/
 mkdir -p ~/.config/i3
 cp i3/* ~/.config/
 
+# set polybar config
+mkdir -p ~/.config/polybar
+cp polybar.conf ~/.config/polybar/config
+
 # install oh-my-zsh
 # sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 

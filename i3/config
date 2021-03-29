@@ -20,10 +20,17 @@ floating_modifier $mod
 
 # Set the numpad on (don't forget to apt install numlockx)
 exec_always --no-startup-id numlockx on
-exec_always feh --bg-scale ~/.wallpaper.png
+
+exec --no-startup-id feh --bg-scale ~/.wallpaper.png
 
 # allow copy/paste from VMware host to VM
 exec --no-startup-id vmware-user
+
+# start compton for clean drun
+exec --no-startup-id compton
+
+#exec --no-startup-id "polybar -r default"
+exec --no-startup-id killall polybar; polybar -r default
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
@@ -32,7 +39,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec rofi -show drun
+#bindsym $mod+d exec dmenu_run
 
 # change focus
 bindsym $mod+Left focus left
@@ -162,22 +170,24 @@ bindsym $mod+Control+e mode "(s)leep (h)ibernate (r)eboot (p)ower off (e)xit-i3"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        #i3bar_command /usr/bin/i3bar
-        #status_command i3status
-        status_command i3blocks
-        #status_command ~/.i3/bin/conky-i3bar
-	font pango:DejaVu Sans Mono, FontAwesome 10
-	tray_output primary
-	position top
-	#colors {
-	#	background #202020
-	#	separator #202020
-	#	statusline #ffffff
-	#	focused_workspace #AAAAAA #000000 #000000
-	#	active_workspace #000000 #808080 #336633
-	#	inactive_workspace #606060 #808080 #000000
-	#	urgent_workspace #AAAAAA #e68080 #ffffff
+#bar {
+#    #status_command i3blocks
+#    status_command i3status
+#	font pango:DejaVu Sans Mono, FontAwesome 10
+#	tray_output primary
+#	position top
+#	#colors {
+#	#	background #202020
+#	#	separator #202020
+#	#	statusline #ffffff
+#	#	focused_workspace #AAAAAA #000000 #000000
+#	#	active_workspace #000000 #808080 #336633
+#	#	inactive_workspace #606060 #808080 #000000
+#	#	urgent_workspace #AAAAAA #e68080 #ffffff
+#
+#	#} 
+#}
+#
+for_window [class=".*"] title_format " %title"
 
-	#} 
-}
+#exec_allways --no-startup-id "killall polybar; polybar -r default"
