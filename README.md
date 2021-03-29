@@ -5,21 +5,6 @@
 For default installation : `cat default.list | xargs apt install -y`
 For dev installation : `cat default.list | xargs apt install -y`
 
-### VIM cheat sheet
-Normal mode :
-- delete paragraph : `dip` (delete inside paragraph)
-- uppercase word : `gUiw` (go uppercase inside word)
-- delete current word and go into insertion mode : `ci`
-- open filename on the word `gf`
-- delete string between double quotes`ci"` (change inside double-quotes)
-
-Commands :
-- sort lines 1 to 5 in alphabetical order `:1,5sort`
-- delete lines 15 to 17 : `15,17d`
-- open file : `:e filename.c`
-- save to new file : `:w filename.py`
-- commands history : `q:`
-
 ### tmux cheat sheet
 - `tmux new -s session_name` : new named session
 - `tmux attach -t session_name` : attach an exsiting session
@@ -49,7 +34,7 @@ To copy out of tmux : use `shift` key
 
 
 ### Generate SSH key
-- `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+- `ssh-keygen -t ed25519 -C "your_email@example.com"`
 
 ### Screenshot
 - install `gnome-screenshot`
@@ -70,3 +55,8 @@ To copy out of tmux : use `shift` key
 
 ### Terminal background color
 `#404552`
+
+### i3 config
+Current wallpaper : [here](https://cdn.statically.io/img/www.pixelstalk.net/wp-content/uploads/2016/04/Backgrounds-dark-minimalist-wallpapers.jpg)
+
+Install `i3blocks` (status bar) and `feh` (to set wallpaper)

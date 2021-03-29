@@ -30,7 +30,9 @@ cp terminator ~/.config/terminator/config
 mkdir -p ~/.config/sublime-text-3
 cp -r sublime-text-3/* ~/.config/
 
-
+# set i3 config
+mkdir -p ~/.config/i3
+cp i3/* ~/.config/
 
 # install oh-my-zsh
 # sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
