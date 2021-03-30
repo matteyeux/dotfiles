@@ -23,8 +23,7 @@ exec_always --no-startup-id numlockx on
 
 exec --no-startup-id feh --bg-scale ~/.wallpaper.png
 
-# allow copy/paste from VMware host to VM
-exec --no-startup-id vmware-user
+exec --no-startup-id setxkbmap fr
 
 # start compton for clean drun
 exec --no-startup-id compton
@@ -36,7 +35,7 @@ exec --no-startup-id killall polybar; polybar -r default
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show drun
@@ -75,7 +74,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+q focus parent
+bindsym $mod+a focus parent
 
 # move in right or left
 bindsym $mod+Control+Right workspace next
