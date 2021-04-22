@@ -60,3 +60,8 @@ To copy out of tmux : use `shift` key
 Current wallpaper : [here](https://cdn.statically.io/img/www.pixelstalk.net/wp-content/uploads/2016/04/Backgrounds-dark-minimalist-wallpapers.jpg)
 
 Install `i3blocks` (status bar) and `feh` (to set wallpaper)
+
+### Setup current DE
+
+Run : `sudo apt install fonts-font-awesome numlockx thunar compton rofi feh i3 i3blocks polybar`
+To apply rofi theme : `xrdb ~/.Xresources`
