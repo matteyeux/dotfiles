@@ -25,13 +25,13 @@ set list
 set listchars=tab:>.,trail:.
 
 
-" if python or yaml file set this
-au Filetype python,yaml set
-    \ tabstop=4
-    \ softtabstop=4
-    \ shiftwidth=4
-    \ expandtab
-    \ autoindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
+
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 
 hi CursorLine term=bold cterm=bold
 syntax on
