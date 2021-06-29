@@ -67,4 +67,4 @@ Run : `sudo apt install fonts-font-awesome numlockx thunar compton rofi feh i3 i
 To apply rofi theme : `xrdb ~/.Xresources`
 
 ### Special thanks
-- [alexmjd](https://github.com/https://github.com/alexmjd)
+- [alexmjd](https://github.com/alexmjd)
