@@ -3,7 +3,7 @@
 ### Package installation
 
 For default installation : `cat default.list | xargs apt install -y`
-For dev installation : `cat default.list | xargs apt install -y`
+For dev installation : `cat dev.list | xargs apt install -y`
 
 ### tmux cheat sheet
 - `tmux new -s session_name` : new named session
@@ -65,3 +65,6 @@ Install `i3blocks` (status bar) and `feh` (to set wallpaper)
 
 Run : `sudo apt install fonts-font-awesome numlockx thunar compton rofi feh i3 i3blocks polybar`
 To apply rofi theme : `xrdb ~/.Xresources`
+
+### Special thanks
+- [alexmjd](https://github.com/https://github.com/alexmjd)
