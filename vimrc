@@ -32,6 +32,7 @@ set expandtab
 set autoindent
 
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+autocmd FileType yaml set noexpandtab shiftwidth=2 softtabstop=2
 
 hi CursorLine term=bold cterm=bold
 syntax on
