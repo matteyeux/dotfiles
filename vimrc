@@ -10,15 +10,13 @@ endif
 
 set showmatch
 set nu
-set tabstop=4
 set autoindent
-set shiftwidth=4
 set noswapfile
 set nobackup
 set nowritebackup
 set encoding=utf-8
-set incsearch		" Shows the match while typing
-set ignorecase		" Search case insensitive...
+set incsearch       " Shows the match while typing
+set ignorecase      " Search case insensitive...
 set background=dark " vim bg will change when running in tmux
 
 set list
@@ -29,10 +27,10 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-set autoindent
 
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
 autocmd FileType yaml set noexpandtab shiftwidth=2 softtabstop=2
+
 
 hi CursorLine term=bold cterm=bold
 syntax on
@@ -66,10 +64,10 @@ function! XTermPasteBegin()
   return ""
 endfunction
 
-if &term =~ '^screen'
-    " tmux will send xterm-style keys when its xterm-keys option is on
-    execute "set <xUp>=\e[1;*A"
-    execute "set <xDown>=\e[1;*B"
-    execute "set <xRight>=\e[1;*C"
-    execute "set <xLeft>=\e[1;*D"
+if exists('$TMUX')
+    let &t_8f = "\<Esc>[38:2:%lu:%lu:%lum"
+    let &t_8b = "\<Esc>[48:2:%lu:%lu:%lum"
+    set termguicolors
+    set term=xterm-256color
 endif
+
