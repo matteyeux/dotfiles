@@ -12,6 +12,7 @@ cp muttrc ~/.muttrc
 cp taskrc ~/.taskrc
 cp gdbinit ~/.gdbinit
 cp gitconfig ~/.gitconfig
+cp pythonrc ~/.pythonrc
 
 read -p "Install Dracula theme for Vim ?" confirm
 

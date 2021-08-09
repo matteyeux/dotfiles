@@ -1,0 +1,9 @@
+def pp(o):
+    import pprint
+    pprint.pprint(o)
+
+
+def ppj(o):
+    import json
+    print(json.dumps(o, indent=4))
+
