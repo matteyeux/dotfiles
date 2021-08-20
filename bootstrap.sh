@@ -33,7 +33,7 @@ cp -r sublime-text-3/* ~/.config/
 
 # set i3 config
 mkdir -p ~/.config/i3
-cp i3/* ~/.config/
+cp i3/* ~/.config/i3/
 
 # set polybar config
 mkdir -p ~/.config/polybar
