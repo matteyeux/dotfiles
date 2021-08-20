@@ -38,8 +38,9 @@ cp i3/* ~/.config/i3/
 # set polybar config
 mkdir -p ~/.config/polybar
 cp polybar.conf ~/.config/polybar/config
+cp Xresources ~/.Xresources
+xrdb ~/.Xresources
 
-cp Xresources .Xresources
 # install oh-my-zsh
 # sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
