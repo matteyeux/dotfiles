@@ -66,5 +66,8 @@ Install `i3blocks` (status bar) and `feh` (to set wallpaper)
 Run : `sudo apt install fonts-font-awesome numlockx thunar compton rofi feh i3 i3blocks polybar`
 To apply rofi theme : `xrdb ~/.Xresources`
 
+You can install a different theme, such as the parrot one (available as a deb file in this repo), mais sure to install `lxappearance`.
+
+
 ### Special thanks
 - [alexmjd](https://github.com/alexmjd)
