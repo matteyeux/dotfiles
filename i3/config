@@ -31,8 +31,8 @@ exec --no-startup-id vmware-user
 # start compton for clean drun
 exec --no-startup-id compton
 
-#exec --no-startup-id "polybar -r default"
-exec --no-startup-id killall polybar; polybar -r default
+# exec --no-startup-id killall polybar; polybar -r default
+exec --no-startup-id killall polybar; /bin/bash ~/.local/bin/launch_polybar.sh
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
