@@ -13,6 +13,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+
+export VAGRANT_DEFAULT_PROVIDER=libvirt
+
 # fix perl crap
 export LANGUAGE=en_US.UTF-8
 export LANG=en_US.UTF-8
