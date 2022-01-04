@@ -68,6 +68,9 @@ To apply rofi theme : `xrdb ~/.Xresources`
 
 You can install a different theme, such as the parrot one (available as a deb file in this repo), mais sure to install `lxappearance`.
 
+### Brightness
+Install `light` and run `sudo light -A 10` to increase brightness.
+
 
 ### Special thanks
 - [alexmjd](https://github.com/alexmjd)
