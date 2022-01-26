@@ -32,8 +32,8 @@ exec --no-startup-id vmware-user
 # start compton for clean drun
 exec --no-startup-id compton
 
-#exec --no-startup-id "polybar -r default"
-exec --no-startup-id killall polybar; polybar -r default
+# exec --no-startup-id killall polybar; polybar -r default
+exec --no-startup-id killall polybar; /bin/bash ~/.local/bin/launch_polybar.sh
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
@@ -142,7 +142,7 @@ bindsym $mod+Shift+r restart
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+l exec "i3lock -i ~/.wallpaper.png"
+bindsym $mod+l exec "i3lock -c 2F4F4F"
 
 # Focus does not follow the mouse
 focus_follows_mouse no
