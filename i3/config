@@ -24,6 +24,7 @@ exec_always --no-startup-id numlockx on
 exec --no-startup-id feh --bg-scale ~/.wallpaper.png
 
 exec --no-startup-id setxkbmap fr
+exec --no-startup-id /usr/lib/gsd-xsettings
 
 # allow copy/paste from VMware host to VM
 exec --no-startup-id vmware-user
@@ -37,8 +38,13 @@ exec --no-startup-id killall polybar; polybar -r default
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+# start IDA free
+bindsym $mod+i exec ~/idafree-7.7/ida64
+
 # kill focused window
 bindsym $mod+q kill
+default_border pixel 1
+default_floating_border pixel 1
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show drun
@@ -194,4 +200,3 @@ bindsym $mod+Control+e mode "(l)ock (s)leep (h)ibernate (r)eboot (p)ower off (e)
 #
 for_window [class=".*"] title_format " %title"
 
-#exec_allways --no-startup-id "killall polybar; polybar -r default"
