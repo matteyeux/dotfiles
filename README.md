@@ -72,5 +72,9 @@ You can install a different theme, such as the parrot one (available as a deb fi
 Install `light` and run `sudo light -A 10` to increase brightness.
 
 
+### Use IDA with Rofi
+
+`cp ~/Desktop/IDA\ Freeware\ 7.6.desktop ~/.local/share/applications/`
+
 ### Special thanks
 - [alexmjd](https://github.com/alexmjd)
