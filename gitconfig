@@ -1,2 +1,7 @@
 [core]
-	editor = vim
+    editor = vim
+[user]
+    email = user@local.host
+    name = matteyeux
+[pull]
+    rebase = true
