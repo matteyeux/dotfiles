@@ -1,7 +1,6 @@
 " this adds dracula theme
-let g:dracula_italic = 0
-packadd! dracula
-colorscheme dracula
+" colorscheme gruvbox
+" let g:gruvbox_contrast_dark = 'hard'
 highlight Normal ctermbg=None
 
 if (has("termguicolors"))

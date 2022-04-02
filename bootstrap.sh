@@ -18,9 +18,9 @@ read -p "Install Dracula theme for Vim ?" confirm
 
 # if yes uncomment line 2 and 3
 if [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]]; then
-	mkdir -p ~/.vim/pack/themes/start
-	git clone https://github.com/dracula/vim.git  ~/.vim/pack/themes/start/dracula
-	sed -i -e "3,4s/^\" //" ~/.vimrc
+    mkdir -p ~/.vim/pack/themes/start
+    git clone https://github.com/morhetz/gruvbox.git ~/.vim/pack/default/start/gruvbox
+    sed -i -e "2,3s/^\" //" ~/.vimrc
 fi
 
 # add terminator configuration
