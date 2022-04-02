@@ -14,7 +14,7 @@ cp gdbinit ~/.gdbinit
 cp gitconfig ~/.gitconfig
 cp pythonrc ~/.pythonrc
 
-read -p "Install Dracula theme for Vim ?" confirm
+read -p "Install Gruvbox theme for Vim ?" confirm
 
 # if yes uncomment line 2 and 3
 if [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]]; then
