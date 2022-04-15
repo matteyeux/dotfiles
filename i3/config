@@ -47,8 +47,7 @@ default_border pixel 1
 default_floating_border pixel 1
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show drun
-#bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec rofi -show drun -show-icons
 
 # change focus
 bindsym $mod+Left focus left
