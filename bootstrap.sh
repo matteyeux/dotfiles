@@ -14,7 +14,7 @@ cp gdbinit ~/.gdbinit
 cp gitconfig ~/.gitconfig
 cp pythonrc ~/.pythonrc
 
-read -p "Install Gruvbox theme for Vim ?" confirm
+read -p "Install Gruvbox theme for Vim ? " confirm
 
 # if yes uncomment line 2 and 3
 if [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]]; then
@@ -23,14 +23,6 @@ if [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]]; then
     sed -i -e "2,3s/^\" //" ~/.vimrc
 fi
 
-# add terminator configuration
-mkdir -p ~/.config/terminator
-cp terminator ~/.config/terminator/config
-
-# add sublime-text3 configuration
-mkdir -p ~/.config/sublime-text-3
-cp -r sublime-text-3/* ~/.config/
-
 # set i3 config
 mkdir -p ~/.config/i3
 cp i3/* ~/.config/i3/
@@ -38,6 +30,10 @@ cp i3/* ~/.config/i3/
 # set polybar config
 mkdir -p ~/.config/polybar
 cp polybar.conf ~/.config/polybar/config
+
+# copy rofi config to its directory
+mkdir -p ~/.config/rofi/
+cp config.rasi ~/.config/rofi/
 
 # set polybar with multiscreen
 mkdir -p ~/.local/bin/
