@@ -73,5 +73,20 @@ Install `light` and run `sudo light -A 10` to increase brightness.
 
 `cp ~/Desktop/IDA\ Freeware\ 7.6.desktop ~/.local/share/applications/`
 
+
+### Notes about thinkfan for my Thinkpad T14 Gen 3
+
+Install `lm-sensors` and `thinkfan`.
+
+Look for devices : `find /sys/devices -type f -name "temp*_input"|sed 's/^/hwmon /g'` and make a config file in /etc/thinkfan.conf (see the file in the tree).
+
+Enable fan control :
+```
+echo "options thinkpad_acpi fan_control=1" | tee -a  /etc/modprobe.d/thinkfan.conf
+modprobe thinkpad_acpi
+```
+
+`echo "thinkpad_acpi\ncoretemp" | sudo tee -a /etc/modules`
+
 ### Special thanks
 - [alexmjd](https://github.com/alexmjd)
