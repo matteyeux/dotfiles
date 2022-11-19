@@ -61,7 +61,7 @@ Current wallpaper : [here](https://cdn.statically.io/img/www.pixelstalk.net/wp-c
 
 ### Setup current DE
 
-Run : `sudo apt install fonts-font-awesome numlockx thunar compton rofi feh i3 polybar`
+Run : `sudo apt install fonts-font-awesome numlockx thunar compton rofi feh i3 polybar policykit-desktop-privileges policykit-1-gnome`
 
 You can install a different theme, such as the parrot one (available as a deb file in this repo), mais sure to install `lxappearance`.
 
