@@ -21,6 +21,9 @@ floating_modifier $mod
 # Set the numpad on (don't forget to apt install numlockx)
 exec_always --no-startup-id numlockx on
 
+# allow to pop a gnom auth prompt
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+
 exec --no-startup-id feh --bg-scale ~/.wallpaper.png
 
 exec --no-startup-id setxkbmap fr
