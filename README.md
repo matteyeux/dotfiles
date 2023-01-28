@@ -88,7 +88,10 @@ modprobe thinkpad_acpi
 
 `echo "thinkpad_acpi\ncoretemp" | sudo tee -a /etc/modules`
 
-Useful blog : https://blog.monosoul.dev/2021/10/17/how-to-control-thinkpad-p14s-fan-speed-in-linux/
+~Useful blog : https://blog.monosoul.dev/2021/10/17/how-to-control-thinkpad-p14s-fan-speed-in-linux/~
+
+Better use zcfan
+
 
 
 ### Special thanks
