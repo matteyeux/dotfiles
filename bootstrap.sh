@@ -8,11 +8,8 @@ cp zshrc ~/.zshrc
 cp vimrc ~/.vimrc
 cp nanorc ~/.nanorc
 cp tmux.conf ~/.tmux.conf
-cp muttrc ~/.muttrc
-cp taskrc ~/.taskrc
 cp gdbinit ~/.gdbinit
 cp gitconfig ~/.gitconfig
-cp pythonrc ~/.pythonrc
 
 read -p "Install Gruvbox theme for Vim ? " confirm
 

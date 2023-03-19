@@ -1,6 +1,0 @@
-# Files
-data.location=~/.task
-
-# theme
-include /usr/share/taskwarrior/solarized-dark-256.theme
-

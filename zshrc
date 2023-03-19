@@ -16,12 +16,10 @@ source $ZSH/oh-my-zsh.sh
 
 export VAGRANT_DEFAULT_PROVIDER=libvirt
 
-# fix perl crap
 export LANGUAGE=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-export THEOS=~/theos
 export PATH=$PATH:~/.local/bin
 
 # workaround for the PYTHONPATH error
@@ -129,9 +127,6 @@ sshportal() {
   ssh ${1}@sshportal $2
 }
 
-export_iboot_symbols() {
-	iBoot64Finder -f $1 |  grep locate | sed  's/\[locate_func]: /dict_f[\"/g' | sed 's/ =/"] =/g'
-}
 
 bindiff () {
 	xxd $1 > ${1}.xxd
@@ -139,20 +134,4 @@ bindiff () {
 	
 	vimdiff ${1}.xxd ${2}.xxd
 }
-
-_remotepy() {
-  local cachedir="${XDG_CACHE_HOME:-$HOME/.cache}/remotepy"
-  local hostnames="${cachedir}"/remotepy.txt
-  mkdir -p "${cachedir}"
-  if ! test "$(find "${hostnames}" -mmin -15 2>/dev/null)"; then
-    echo "select device from devices;" | sqlite3 ~/.remotepy.db > "${hostnames}".new
-    if test -s "${hostnames}".new; then
-      mv "${hostnames}"{.new,}
-    else
-      touch "${hostnames}"
-    fi
-  fi
-  compadd $(cat "${hostnames}")
-}
-compdef _remotepy remotepy
 

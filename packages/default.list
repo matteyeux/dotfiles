@@ -4,5 +4,15 @@ htop
 dos2unix
 tree
 tmux
-openssh-server
-sudo 
+sudo
+fonts-font-awesome
+zsh
+numlockx
+thunar
+compton
+rofi
+feh
+i3
+polybar
+policykit-desktop-privileges
+policykit-1-gnome

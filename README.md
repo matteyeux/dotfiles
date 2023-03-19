@@ -2,8 +2,7 @@
 
 ### Package installation
 
-For default installation : `cat default.list | xargs apt install -y`
-For dev installation : `cat dev.list | xargs apt install -y`
+For default installation : `cat packages/default.list | xargs sudo apt install -y`
 
 ### tmux cheat sheet
 - `tmux new -s session_name` : new named session
@@ -76,21 +75,7 @@ Install `light` and run `sudo light -A 10` to increase brightness.
 
 ### Notes about thinkfan for my Thinkpad T14 Gen 3
 
-Install `lm-sensors` and `thinkfan`.
-
-Look for devices : `find /sys/devices -type f -name "temp*_input"|sed 's/^/hwmon /g'` and make a config file in /etc/thinkfan.conf (see the file in the tree).
-
-Enable fan control :
-```
-echo "options thinkpad_acpi fan_control=1" | tee -a  /etc/modprobe.d/thinkfan.conf
-modprobe thinkpad_acpi
-```
-
-`echo "thinkpad_acpi\ncoretemp" | sudo tee -a /etc/modules`
-
-~Useful blog : https://blog.monosoul.dev/2021/10/17/how-to-control-thinkpad-p14s-fan-speed-in-linux/~
-
-Better use zcfan
+Use [zcfan](https://github.com/cdown/zcfan)
 
 
 
