@@ -47,21 +47,19 @@ alias myip='curl ipinfo.io/ip'
 alias svi='sudo vi'
 alias keygen='ssh-keygen -t rsa -b 4096 -C "$(hostname)"'
 alias sl='ls --color=tty'
-alias ida='wine64-development ~/.wine/drive_c/Program\ Files/IDA\ 7.0/ida.exe'
-alias ida64='wine64-development ~/.wine/drive_c/Program\ Files/IDA\ 7.0/ida64.exe'
 alias pipenv='virtualenv -p python3 env'
 alias venv='source env/bin/activate'
 alias freeze='pip3 freeze | grep -v "pkg-resources" > requirements.txt'
 alias newpass="openssl rand -base64 20 | cut -d '=' -f 1"
 alias ts="tmux new-session -s default_$(whoami)"
-alias code="codium"
 alias diff="diff --color"
 alias run_jekyll='bundle exec jekyll server --host=0.0.0.0'
 alias k=kubectl
 alias gfun="git log --graph --pretty=format:'\''%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Cblue - %cn %Creset'\'' --abbrev-commit --date=relative'"
-alias binja="~/Documents/binaryninja/binaryninja"
 alias python="python3"
 alias wtf='yes "$(seq 231 -1 16)" | while read i; do printf "\x1b[48;5;${i}m\n"; sleep .02; done'
+alias ida='open -a "/Applications/IDA Professional 9.1.app"'
+alias binja='open -a "/Applications/Binary Ninja.app"'
 if [[ !$(which python) ]]; then
         alias python="python3"
 fi
@@ -107,23 +105,12 @@ ssh_tmux() {
 	ssh -t "$1" tmux a || ssh -t "$1" tmux
 }
 
-# docker
-alias dstop-all='docker stop $(docker ps -a -q)'
-alias drm-all='docker rm $(docker ps -a -q)'
-alias dls='docker image ls'
 
 dockerip() {
         docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}} {{end}}' $1
 }
 
 # Open a bash terminal in the container passed through argument 1 (id or name)
-dbash() {
-  docker exec -it $1 bash
-}
-
-drun() {
-  docker exec -it $1 $2
-}
 
 sshportal() {
   ssh ${1}@sshportal $2
